@@ -9,22 +9,23 @@
         .hero-section {
             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=1200') no-repeat center center/cover;
             color: white;
-            padding: 100px 0;
+            padding: 120px 0;
         }
         .nav-link.active { font-weight: bold; }
+        footer { background-color: #212529; color: white; }
     </style>
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">НЧ "Гоце Делчев - 2009"</a>
+            <a class="navbar-brand fw-bold" href="#">НЧ "Гоце Делчев - 2009"</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Начало</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Начало</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">За нас</a></li>
                     <li class="nav-item"><a class="nav-link" href="#activities">Дейности</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Контакти</a></li>
@@ -36,8 +37,8 @@
     <header id="home" class="hero-section text-center">
         <div class="container">
             <h1 class="display-4 fw-bold">Народно читалище "Гоце Делчев - 2009"</h1>
-            <p class="lead">Средище на българската култура, традиции и дух в град Русе</p>
-            <a href="#about" class="btn btn-primary btn-lg mt-3">Научете повече</a>
+            <p class="lead fs-3">Средище на българската култура, традиции и дух в град Русе</p>
+            <a href="#about" class="btn btn-danger btn-lg mt-3 px-4">Научете повече</a>
         </div>
     </header>
 
@@ -45,12 +46,12 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <h2 class="mb-4">За читалището</h2>
-                    <p>Народно читалище "Гоце Делчев - 2009" е основано с мисията да съхранява, развива и популяризира българското културно наследство и фолклор в гр. Русе.</p>
-                    <p>Вече години наред читалището е дом за таланти от всички възрасти, обединявайки хората чрез изкуство, просвета и любов към традицията.</p>
+                    <h2 class="mb-4 fw-bold text-success">За читалището</h2>
+                    <p class="lead">Народно читалище "Гоце Делчев - 2009" е основано с дълбоката мисия да съхранява, развива и популяризира българското културно-историческо наследство и фолклор в град Русе.</p>
+                    <p>Вече години наред читалището е притегателен център за таланти от всички възрасти, като активно участва в културния живот на града чрез организиране на концерти, чествания и образователни инициативи.</p>
                 </div>
                 <div class="col-md-6 text-center">
-                    <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=600" class="img-fluid rounded shadow" alt="Читалище">
+                    <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=600" class="img-fluid rounded shadow-lg" alt="Културна дейност">
                 </div>
             </div>
         </div>
@@ -58,29 +59,32 @@
 
     <section id="activities" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">Нашите дейности и състави</h2>
+            <h2 class="text-center mb-5 fw-bold">Нашите дейности и състави</h2>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
+                        <div class="card-body p-4 text-center">
+                            <div class="fs-1 mb-3">💃</div>
                             <h5 class="card-title fw-bold">Фолклорни състави</h5>
-                            <p class="card-text">Пазим и предаваме магията на българския народни танци и песни на утрешните поколения.</p>
+                            <p class="card-text text-muted">Пазим и предаваме магията на българските народни танци, песни и обичаи на утрешните поколения.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
+                        <div class="card-body p-4 text-center">
+                            <div class="fs-1 mb-3">🎨</div>
                             <h5 class="card-title fw-bold">Школи и курсове</h5>
-                            <p class="card-text">Разнообразни арт ателиета, музикални и езикови школи за деца и възрастни.</p>
+                            <p class="card-text text-muted">Разнообразни творчески ателиета, музикални, езикови и художествени школи за деца и възрастни.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center">
+                        <div class="card-body p-4 text-center">
+                            <div class="fs-1 mb-3">📅</div>
                             <h5 class="card-title fw-bold">Културни събития</h5>
-                            <p class="card-text">Организиране на концерти, чествания, изложби и отбелязване на традиционни български празници.</p>
+                            <p class="card-text text-muted">Организиране на концерти, чествания, изложби и отбелязване на традиционни български празници.</p>
                         </div>
                     </div>
                 </div>
@@ -90,16 +94,17 @@
 
     <section id="contact" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Контакти</h2>
+            <h2 class="text-center mb-5 fw-bold">Контакти</h2>
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <div class="card border-0 shadow">
-                        <div class="card-body p-4">
-                            <p>📍 <strong>Адрес:</strong> гр. Русе, България</p>
-                            <p>📞 <strong>Телефон за връзка:</strong> [Въведете телефон]</p>
-                            <p>✉️ <strong>Имейл:</strong> [Въведете имейл]</p>
-                            <hr>
-                            <p class="text-muted small">Работно време: Понеделник - Петък</p>
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-5">
+                            <h4 class="mb-4 fw-bold">Свържете се с нас</h4>
+                            <p class="fs-5">📍 <strong>Адрес:</strong> гр. Русе, България</p>
+                            <p class="fs-5">📞 <strong>Телефон:</strong> [Въведете телефон тук]</p>
+                            <p class="fs-5">✉️ <strong>Имейл:</strong> [Въведете имейл тук]</p>
+                            <hr class="my-4">
+                            <p class="text-muted small mb-0">Заповядайте на място за записвания в нашите състави и школи!</p>
                         </div>
                     </div>
                 </div>
@@ -107,7 +112,7 @@
         </div>
     </section>
 
-    <footer class="bg-dark text-white text-center py-4">
+    <footer class="text-center py-4">
         <div class="container">
             <p class="mb-0">&copy; 2026 НЧ "Гоце Делчев - 2009", гр. Русе. Всички права запазени.</p>
         </div>
