@@ -1,0 +1,34 @@
+backend:
+  name: github
+  repo: TrayanTotev/TrayanTotev.github.io
+  branch: main
+  auth_endpoint: api/auth
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "events"
+    label: "События"
+    folder: "_events"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Заглавие", name: "title", widget: "string"}
+      - {label: "Дата", name: "date", widget: "datetime"}
+      - {label: "Описание", name: "body", widget: "markdown"}
+      - {label: "Картинка", name: "image", widget: "image", required: false}
+      - {label: "Място", name: "location", widget: "string"}
+      - {label: "Статус", name: "status", widget: "select", options: ["Предстоящо", "Отминало"]}
+
+  - name: "news"
+    label: "Новини"
+    folder: "_news"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Заглавие", name: "title", widget: "string"}
+      - {label: "Дата", name: "date", widget: "datetime"}
+      - {label: "Съдържание", name: "body", widget: "markdown"}
+      - {label: "Картинка", name: "image", widget: "image", required: false}
+      - {label: "Автор", name: "author", widget: "string"}
